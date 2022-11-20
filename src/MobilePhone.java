@@ -1,11 +1,7 @@
 
-public class MobilePhone extends Product {
+public class MobilePhone {/* 
 
-    public int RAM_MB = 6;// (MB):int = 6
-    public int phoneMemoryInformation;// (GB) :int= {128,64 }
-    public double screenSize_Inc = 6.1;// (Inc):double = {6.1}
-    public int batteryPower = 4000;// :int=4000
-    public String color;// :string = {Black, Red, Blue}
+
 
     MobilePhone() {
 
@@ -65,4 +61,4 @@ public class MobilePhone extends Product {
     public void setColor(String color) {
         this.color = color;
     }
-}
+*/}

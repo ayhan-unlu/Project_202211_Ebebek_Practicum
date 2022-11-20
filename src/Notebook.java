@@ -1,9 +1,6 @@
 
-public class Notebook extends Product {
+public class Notebook {/* 
 
-    public int RAM_GB = 8;// (GB):int = 8
-    public int storage_SSDs_GB = 512;// (SSDs):int= 512
-    public int screenSize_Inc = 14;// (Inc):int=14
 
     // Notebook(){
     /*
@@ -17,7 +14,7 @@ public class Notebook extends Product {
      * int RAM_GB = 8 ;//(GB):int = 8
      * int storage_SSDs_GB = 512 ;//(SSDs):int= 512
      * int screenSize_Inc = 14;//(Inc):int=14
-     */
+     
 
     // }
 
@@ -56,7 +53,7 @@ public class Notebook extends Product {
         this.screenSize_Inc = screenSize_Inc;
     }
 
-    /*
+    
      * while (isError) {
      * try {
      * System.out.println(

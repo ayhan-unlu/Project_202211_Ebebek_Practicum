@@ -1,36 +1,56 @@
 import java.util.Scanner;
+import java.util.UUID;
 
 /**
  * Product
  */
 public class Product extends MenuPanel {
 
-    public static int productId = 1;
-    public static String productGroup;
+    public String productId;
+    public String productGroup;
     public int unitPrice;
     public int disocuntRate;
     public int stockAmount;
     public String nameOfProduct;
     public String brandInfo;
+    public double screenSize_Inc = 6.1;// (Inc):double = {6.1}
+
+    public int RAM_GB = 8;// (GB):int = 8
+    public int storage_SSDs_GB = 512;// (SSDs):int= 512
+
+    public int RAM_MB = 6;// (MB):int = 6
+    public int phoneMemoryInformation;// (GB) :int= {128,64 }
+    public int batteryPower = 4000;// :int=4000
+    public String color;// :string = {Black, Red, Blue}
+
 
     // Product.productMenu();
     Product() {
 
     }
 
-    Product(int productId, String productGroup, int unitPrice, int disocuntRate, int stockAmount, String nameOfProduct,
-            String brandInfo) {
+    Product(String productGroup, int unitPrice, int disocuntRate, int stockAmount, String nameOfProduct, String brandInfo, double screenSize_Inc, int RAM_GB, int storage_SSDs_GB, int RAM_MB, int phoneMemoryInformation, int batteryPower, String color) {
         super();
-        this.productId = productId + 1;
+        productId =  UUID.randomUUID().toString();
         this.productGroup = productGroup;
         this.unitPrice = unitPrice;
         this.disocuntRate = disocuntRate;
         this.stockAmount = stockAmount;
         this.nameOfProduct = nameOfProduct;
         this.brandInfo = brandInfo;
+        this.screenSize_Inc = screenSize_Inc;
+
+        this.RAM_GB = RAM_GB;
+        this.storage_SSDs_GB = storage_SSDs_GB;
+
+        this.RAM_MB = RAM_MB;
+        this.phoneMemoryInformation = phoneMemoryInformation;
+        this.batteryPower = batteryPower;
+        this.color = color;
+
     }
 
-    public int getProductId() {
+    public String getProductId() {
         return productId;
     }
 
@@ -54,7 +74,7 @@ public class Product extends MenuPanel {
         return brandInfo;
     }
 
-    public void setProductId(int productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 
@@ -87,13 +107,25 @@ public class Product extends MenuPanel {
     }
 
     public static void addProduct() {
+        Scanner scan = new Scanner(System.in);
+      //  Product p = new Product();
+        productGroup=productGroup;
+
+        System.out.println("product group:");
+        productGroup=scan.nextLine();
+        System.out.println(productGroup);
+        System.out.println(productGroup=="Notebook");
+
+
+
+        /* 
                 
         System.out.println(Product.productGroup);
 
         Scanner scan = new Scanner(System.in);
         productId++;
 
-        System.out.println("product group:");
+
         
         Product.productGroup = scan.nextLine();
         System.out.println(Product.productGroup);
@@ -126,7 +158,7 @@ public class Product extends MenuPanel {
             int screenSize_Inc = scan.nextInt();
 
         }
-
+*/
         System.out.println("addProduct");
     }
 
