@@ -1,5 +1,4 @@
 
-
 public class MobilePhone extends Product {
 
     public int RAM_MB = 6;// (MB):int = 6
@@ -8,7 +7,13 @@ public class MobilePhone extends Product {
     public int batteryPower = 4000;// :int=4000
     public String color;// :string = {Black, Red, Blue}
 
-    MobilePhone(int productId, String productGroup, int unitPrice, int disocuntRate, int stockAmount, String nameOfProduct, String brandInfo, int RAM_MB, int phoneMemoryInformation, double screenSize_Inc, int batteryPower, String color) {
+    MobilePhone() {
+
+    }
+
+    MobilePhone(int productId, String productGroup, int unitPrice, int disocuntRate, int stockAmount,
+            String nameOfProduct, String brandInfo, int RAM_MB, int phoneMemoryInformation, double screenSize_Inc,
+            int batteryPower, String color) {
 
         super(productId, productGroup, unitPrice, disocuntRate, stockAmount, nameOfProduct, brandInfo);
 

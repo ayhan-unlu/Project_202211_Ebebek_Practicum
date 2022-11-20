@@ -6,10 +6,10 @@ public class PatikaStoreMain {
         PatikaStoreMain patikaStoreMain = new PatikaStoreMain();
         MenuPanel menuPanel = new MenuPanel();
         MenuPanel.mainMenu();
+        
 
 
-        System.out.println("welcome");
-/*         Notebook notebook1 = new Notebook( 1, "Notebook",7000, 5, 5, "HUAWEI Matebook 14", "HUAWEI", 16, 512, 14);
+/*         1
         Notebook notebook2 = new Notebook(2, "Notebook", 3699, 5, 5, "LENOVO V14 IGL", "LENOVO", 8, 1024, 8);
 
         Notebook notebook3 = new Notebook(3, "Notebook", 8199, 5, 5, "ASUS Tuf Gaming", "ASUS", 32, 2048, 15);
