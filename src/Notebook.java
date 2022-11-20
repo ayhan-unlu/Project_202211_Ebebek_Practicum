@@ -30,6 +30,30 @@ public class Notebook extends Product {
         this.storage_SSDs_GB = storage_SSDs_GB;
         this.screenSize_Inc =screenSize_Inc;
     }
+
+    public int getRAM_GB() {
+        return RAM_GB;
+    }
+
+    public int getStorage_SSDs_GB() {
+        return storage_SSDs_GB;
+    }
+
+    public int getScreenSize_Inc() {
+        return screenSize_Inc;
+    }
+
+    public void setRAM_GB(int rAM_GB) {
+        RAM_GB = rAM_GB;
+    }
+
+    public void setStorage_SSDs_GB(int storage_SSDs_GB) {
+        this.storage_SSDs_GB = storage_SSDs_GB;
+    }
+
+    public void setScreenSize_Inc(int screenSize_Inc) {
+        this.screenSize_Inc = screenSize_Inc;
+    }
         
   /*      while (isError) {
             try {
