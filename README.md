@@ -1,34 +1,42 @@
-## Getting Started
+# Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
-
-
-# Prepared for the Fullfillment of Java101 path in " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
+### Prepared for the Fullfillment of Java101 path in " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
+As of 21 November 2022 12:43 pm only the Project Menu displays are functional. 
+ 
 
 ## Project Summary
 
 Patika team has decided to open a virtual store where electronic goods are sold and expects you to make the product management system of this store from you, the trail volunteers.
 The name of the Virtual Store will be "PatikaStore".
 
+[Detailed project Doc in English](src/DOCS/Final_Case_English.rtf)  
+[Detailed project Doc in Turkish](src/DOCS/Final_Case_Turkish.rtf) 
+
+
+## Project UML
+
+![FinalCaseUML](https://user-images.githubusercontent.com/103220953/203011991-eeecf53d-eb61-4a0b-983a-180b1833f696.png)
+
+## Menu Structure
+
+![MainMenu](https://user-images.githubusercontent.com/103220953/203016977-72822b5b-fe19-47b5-81d2-ef70bfc42aec.JPG)
+
+![ProductMenu](https://user-images.githubusercontent.com/103220953/203017022-b9b740ff-5443-4616-8bb8-25ebf755746a.JPG)
+
+![BrandMenu](https://user-images.githubusercontent.com/103220953/203017064-08ff6d98-a906-4297-bbe8-6c180c761163.JPG)
+
+![ListingMenu](https://user-images.githubusercontent.com/103220953/203017083-9b7f78c9-a17b-4223-b35a-bf9ecadcc3df.JPG)
+
+
+## Folder Structure
+
+The workspace contains three folders by default, where:
+
+- `.vscode`: project is prepared in VS Code
+- `src`: the folder to maintain sources
+- `bin`: the folder to maintain dependencies
+
 
 ## Thanks to <a href="https://app.patika.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/patikaLogoSVG.svg" alt="https://app.patika.dev/" height="100" width="100" /></a> and  <a href="https://kodluyoruz.org/tr/kodluyoruz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/KodluyoruzLogoSVG.svg" alt="https://kodluyoruz.org/tr/kodluyoruz/" height="100" width="100" /></a> 
 
-
-![FinalCaseUML](https://user-images.githubusercontent.com/103220953/203011991-eeecf53d-eb61-4a0b-983a-180b1833f696.png)
 
