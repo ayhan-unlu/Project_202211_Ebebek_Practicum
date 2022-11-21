@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class MenuPanel extends PatikaStoreMain {
@@ -21,7 +20,7 @@ public class MenuPanel extends PatikaStoreMain {
     public static void printProductMenuMessage() {
 
         System.out.println(
-                "****************\n* PRODUCT MENU *\n****************\n1 - Add Product Group\n2 - Add Product\n3 - Delete Product by Id\n4 - List Product(by Product Group) \n5 - List Product(by Product ID)\n6 - List Product(by Brand)\n0 - Return Product Management System \nPlease Choose (0-6): ");
+                "****************\n* PRODUCT MENU *\n****************\n1 - Add Product \n2 - Delete Productby Id\n3 - List Product by Group \n4 - List Product by ID\n5 - List Product by Brand\n0 - Return Product Management System \nPlease Choose (0-6): ");
     }
 
     public static void printBrandMenuMessage() {
@@ -105,21 +104,21 @@ public class MenuPanel extends PatikaStoreMain {
                         mainMenu();
                         break;
                     case 1:
-                        Product.addProductGroup();
-                        break;
-                    case 2:
                         Product.addProduct();
                         break;
-                    case 3:
+                    case 2:
                         Product.deleteProductById();
+
+                        break;
+                    case 3:
+                        //Product.ListProductByGroup();
+
                         break;
                     case 4:
-                   //     Product.ListProductByGroup();
+                        Product.ListProductById();
+
                         break;
                     case 5:
-                        Product.ListProductById();
-                        break;
-                    case 6:
                         Product.ListProductByBrand();
 
                         break;
