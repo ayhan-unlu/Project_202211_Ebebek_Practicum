@@ -109,7 +109,7 @@ public class Product extends MenuPanel {
     public static void addProduct() {
         Scanner scan = new Scanner(System.in);
       //  Product p = new Product();
-        productGroup=productGroup;
+     /*    productGroup=productGroup;
 
         System.out.println("product group:");
         productGroup=scan.nextLine();
@@ -117,7 +117,7 @@ public class Product extends MenuPanel {
         System.out.println(productGroup=="Notebook");
 
 
-
+*/
         /* 
                 
         System.out.println(Product.productGroup);
