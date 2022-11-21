@@ -1,0 +1,136 @@
+<mxfile host="65bd71144e">
+    <diagram id="CI9G0AktnCXbJ8z35fBC" name="Page-1">
+        <mxGraphModel dx="1514" dy="3991" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="#FFFFFF" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="141" style="edgeStyle=none;html=1;entryX=0.53;entryY=1.015;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" target="159" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="224" y="-2920" as="sourcePoint"/>
+                        <mxPoint x="479" y="-2636.7" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="224" y="-2600"/>
+                            <mxPoint x="487" y="-2600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="142" value="Brands" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="130" y="-3080" width="200" height="144" as="geometry"/>
+                </mxCell>
+                <mxCell id="144" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="142" vertex="1">
+                    <mxGeometry y="26" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="+ id:int&#10;+ name:string = {Samsung, Lenovo, Apple, Huawei, Casper, Asus, HP, Xiaomi, Monster}&#10;" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="142" vertex="1">
+                    <mxGeometry y="34" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="143" value="+ listBrandsAlphabetically(productType):returnType&#10;+ 1STATİC addBrand(productType):returnType" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="142" vertex="1">
+                    <mxGeometry y="84" width="200" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="146" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;exitX=0.482;exitY=0.991;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="150" target="152" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="411" y="-3160" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="147" value="Menu" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="311" y="-3230" width="200" height="106" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="147" vertex="1">
+                    <mxGeometry y="26" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="+ Name:string=PatikaStorePMS" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="147" vertex="1">
+                    <mxGeometry y="34" width="200" height="24" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="+ createBrand(brandID)&#10;+ matchProducts(brand)&#10;+ listBrand(produtType):Alphabetic" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="147" vertex="1">
+                    <mxGeometry y="58" width="200" height="48" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" style="edgeStyle=none;html=1;entryX=0.997;entryY=-0.031;entryDx=0;entryDy=0;exitX=0;exitY=0.661;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="153" target="145" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="610" y="-2878" as="targetPoint"/>
+                        <mxPoint x="611" y="-2838" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="152" value="Product" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="511" y="-3078" width="200" height="262" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="+productGroup:string ={Mobile Phones, Notebooks}&#10;+ productId:int&#10;+ unitPrice:int&#10;+ disocuntRate:int&#10;+ stockAmount:int&#10;+ nameOfProduct:string&#10;+ brandInfo:string" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="152" vertex="1">
+                    <mxGeometry y="26" width="200" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="154" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="152" vertex="1">
+                    <mxGeometry y="146" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="+ addProduct(productId)&#10;+ deleteProduct(productId)&#10;+ addProductGroup(name)&#10;+ selectProductGroup(name)&#10;+listProduct(ProductGroup):Tabular&#10;+ filterProduct(productID)&#10;+ filterProduct(brand)&#10;" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="152" vertex="1">
+                    <mxGeometry y="154" width="200" height="108" as="geometry"/>
+                </mxCell>
+                <mxCell id="156" value="Mobile" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="381" y="-2783" width="200" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="157" value="+ RAM_MB:int = 6&#10;+ phoneMemoryInformation_GB:int= {128,64 }&#10;+ screenSize_Inc:double = 6.1&#10;+ batteryPower :int=4000&amp;nbsp;&#10;+ color string = {Black, Red, Blue}" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="156" vertex="1">
+                    <mxGeometry y="26" width="200" height="104" as="geometry"/>
+                </mxCell>
+                <mxCell id="158" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="156" vertex="1">
+                    <mxGeometry y="130" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="&amp;nbsp;" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="156" vertex="1">
+                    <mxGeometry y="138" width="200" height="22" as="geometry"/>
+                </mxCell>
+                <mxCell id="160" style="edgeStyle=none;html=1;entryX=0.552;entryY=1.01;entryDx=0;entryDy=0;entryPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" target="164" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="226" y="-2920" as="sourcePoint"/>
+                        <mxPoint x="611" y="-2671" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="226" y="-2600"/>
+                            <mxPoint x="748" y="-2600"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="161" value="Notebook" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="638" y="-2782" width="200" height="116" as="geometry"/>
+                </mxCell>
+                <mxCell id="162" value="+ RAM_GB:int = 8&#10;+ storage_SSDs:int= 512&#10;+ screenSize_Inc:int=14&#10;" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="161" vertex="1">
+                    <mxGeometry y="26" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="161" vertex="1">
+                    <mxGeometry y="76" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="&amp;nbsp;" style="text;strokeColor=#000000;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;" parent="161" vertex="1">
+                    <mxGeometry y="84" width="200" height="32" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="150" target="142" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="169" value="Add Brand" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="168" vertex="1" connectable="0">
+                    <mxGeometry x="0.1862" y="-2" relative="1" as="geometry">
+                        <mxPoint x="-3" y="-1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="182" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="150" target="142" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="108.19999999999982" y="-2878.004" as="sourcePoint"/>
+                        <mxPoint x="113" y="-2758.63" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="183" value="List Brand" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="182" vertex="1" connectable="0">
+                    <mxGeometry x="0.1862" y="-2" relative="1" as="geometry">
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="184" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.48;exitY=1.02;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="155" target="156" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="611" y="-2838" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="185" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.505;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" source="155" target="161" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="611" y="-2838" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="186" value="&lt;span style=&quot;font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 700 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; display: inline ; float: none&quot;&gt;PatikaStore&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;labelBackgroundColor=#FFFFFF;labelBorderColor=#FFFFFF;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="311" y="-3280" width="200" height="29" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

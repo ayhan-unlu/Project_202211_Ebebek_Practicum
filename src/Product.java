@@ -6,22 +6,22 @@ import java.util.UUID;
  */
 public class Product extends MenuPanel {
 
-    public String productId;
-    public String productGroup;
-    public int unitPrice;
-    public int disocuntRate;
-    public int stockAmount;
-    public String nameOfProduct;
-    public String brandInfo;
-    public double screenSize_Inc = 6.1;// (Inc):double = {6.1}
+    private String productId;
+    private String productGroup;
+    private int unitPrice;
+    private int disocuntRate;
+    private int stockAmount;
+    private String nameOfProduct;
+    private String brandInfo;
+    private double screenSize_Inc = 6.1;// (Inc):double = {6.1}
 
-    public int RAM_GB = 8;// (GB):int = 8
-    public int storage_SSDs_GB = 512;// (SSDs):int= 512
+    private int RAM_GB = 8;// (GB):int = 8
+    private int storage_SSDs_GB = 512;// (SSDs):int= 512
 
-    public int RAM_MB = 6;// (MB):int = 6
-    public int phoneMemoryInformation;// (GB) :int= {128,64 }
-    public int batteryPower = 4000;// :int=4000
-    public String color;// :string = {Black, Red, Blue}
+    private int RAM_MB = 6;// (MB):int = 6
+    private int phoneMemoryInformation;// (GB) :int= {128,64 }
+    private int batteryPower = 4000;// :int=4000
+    private String color;// :string = {Black, Red, Blue}
 
 
     // Product.productMenu();
@@ -187,85 +187,3 @@ public class Product extends MenuPanel {
      * }
      */
 }
-
-/*
- * 
- * 
- * 
- * Product(){
- * boolean isError = true;
- * 
- * while (isError) {
- * try {
- * Scanner scan=new Scanner(System.in);
- * int selection = scan.nextInt();
- * scan.close();
- * switch (selection) {
- * 
- * case 8:
- * break;
- * case 1:
- * addProduct();
- * System.out.println("added Product");
- * break;
- * case 2:
- * addProductGroup();
- * System.out.println("added group");
- * 
- * break;
- * case 3:
- * deleteProductById();
- * System.out.println("deleted product");
- * 
- * break;
- * case 4:
- * listTabularForm();
- * System.out.println("listed product");
- * 
- * break;
- * case 5:
- * selectProductGroup();
- * System.out.println("selected group");
- * 
- * break;
- * case 6:
- * filterProductId();
- * System.out.println("filtered product by ID");
- * 
- * break;
- * case 7:
- * filterProduct();
- * System.out.println("filtered product by Brand");
- * 
- * break;
- * 
- * default:
- * break;
- * }
- * // isError = false;
- * 
- * } catch (Exception e) {
- * System.out.println("\nSorry but You have entered an invalid number.\n");
- * }
- * 
- * }
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * 
- * }
- * 
- * 
- * }
- * 
- */
