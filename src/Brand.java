@@ -3,6 +3,7 @@ public class Brand extends MenuPanel {
     int brandId;
     String brand;
 
+
     Brand(int brandId, String brand) {
         super();
         this.brandId = brandId;

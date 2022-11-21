@@ -50,57 +50,6 @@ public class Product extends MenuPanel {
 
     }
 
-    public String getProductId() {
-        return productId;
-    }
-
-    public int getUnitPrice() {
-        return unitPrice;
-    }
-
-    public int getDisocuntRate() {
-        return disocuntRate;
-    }
-
-    public int getStockAmount() {
-        return stockAmount;
-    }
-
-    public String getNameOfProduct() {
-        return nameOfProduct;
-    }
-
-    public String getBrandInfo() {
-        return brandInfo;
-    }
-
-    public void setProductId(String productId) {
-        this.productId = productId;
-    }
-
-    public void setProductGroup(String productGroup) {
-        this.productGroup = productGroup;
-    }
-
-    public void setUnitPrice(int unitPrice) {
-        this.unitPrice = unitPrice;
-    }
-
-    public void setDisocuntRate(int disocuntRate) {
-        this.disocuntRate = disocuntRate;
-    }
-
-    public void setStockAmount(int stockAmount) {
-        this.stockAmount = stockAmount;
-    }
-
-    public void setNameOfProduct(String nameOfProduct) {
-        this.nameOfProduct = nameOfProduct;
-    }
-
-    public void setBrandInfo(String brandInfo) {
-        this.brandInfo = brandInfo;
-    }
 
     public static void addProductGroup() {
         System.out.println("addProductGroup");

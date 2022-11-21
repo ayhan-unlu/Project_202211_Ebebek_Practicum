@@ -21,44 +21,4 @@ public class MobilePhone {/*
         this.color = color;
 
     }
-
-    public int getRAM_MB() {
-        return RAM_MB;
-    }
-
-    public int getPhoneMemoryInformation() {
-        return phoneMemoryInformation;
-    }
-
-    public double getScreenSize_Inc() {
-        return screenSize_Inc;
-    }
-
-    public int getBatteryPower() {
-        return batteryPower;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setRAM_MB(int rAM_MB) {
-        RAM_MB = rAM_MB;
-    }
-
-    public void setPhoneMemoryInformation(int phoneMemoryInformation) {
-        this.phoneMemoryInformation = phoneMemoryInformation;
-    }
-
-    public void setScreenSize_Inc(double screenSize_Inc) {
-        this.screenSize_Inc = screenSize_Inc;
-    }
-
-    public void setBatteryPower(int batteryPower) {
-        this.batteryPower = batteryPower;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
 */}
