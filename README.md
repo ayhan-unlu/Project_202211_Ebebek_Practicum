@@ -29,3 +29,6 @@ The name of the Virtual Store will be "PatikaStore".
 
 ## Thanks to <a href="https://app.patika.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/patikaLogoSVG.svg" alt="https://app.patika.dev/" height="100" width="100" /></a> and  <a href="https://kodluyoruz.org/tr/kodluyoruz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/KodluyoruzLogoSVG.svg" alt="https://kodluyoruz.org/tr/kodluyoruz/" height="100" width="100" /></a> 
 
+
+![FinalCaseUML](https://user-images.githubusercontent.com/103220953/203011991-eeecf53d-eb61-4a0b-983a-180b1833f696.png)
+
