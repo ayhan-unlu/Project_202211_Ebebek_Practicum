@@ -34,7 +34,7 @@ The name of the Virtual Store will be "PatikaStore".
 
 The workspace contains three folders by default, where:
 
-- `.vscode`: project is prepared in VS Code
+- `.vscode`: project including UML diagrams is prepared in VS Code
 - `src`: the folder to maintain sources
 - `bin`: the folder to maintain dependencies
 

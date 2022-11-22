@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 import java.util.UUID;
 
@@ -23,15 +26,19 @@ public class Product extends MenuPanel {
     private int batteryPower = 4000;// :int=4000
     private String color;// :string = {Black, Red, Blue}
 
+    List<Product> productList = new ArrayList<Product>();
+    HashMap<String,List<Product>> productMap = new HashMap<>();
 
     // Product.productMenu();
     Product() {
 
     }
 
-    Product(String productGroup, int unitPrice, int disocuntRate, int stockAmount, String nameOfProduct, String brandInfo, double screenSize_Inc, int RAM_GB, int storage_SSDs_GB, int RAM_MB, int phoneMemoryInformation, int batteryPower, String color) {
+    Product(String productGroup, int unitPrice, int disocuntRate, int stockAmount, String nameOfProduct,
+            String brandInfo, double screenSize_Inc, int RAM_GB, int storage_SSDs_GB, int RAM_MB,
+            int phoneMemoryInformation, int batteryPower, String color) {
         super();
-        productId =  UUID.randomUUID().toString();
+        productId = UUID.randomUUID().toString();
         this.productGroup = productGroup;
         this.unitPrice = unitPrice;
         this.disocuntRate = disocuntRate;
@@ -49,78 +56,92 @@ public class Product extends MenuPanel {
         this.color = color;
 
     }
-public static void createProductID() {
-    String productId =  UUID.randomUUID().toString();
-    System.out.println(productId);
-}
+
+    public static void createProductID() {
+        String productId = UUID.randomUUID().toString();
+        createProductHashMap(productId);
+      //  System.out.println(productId);
+      //  addProduct();
+    }
+
+    private static void createProductHashMap(String productId) {
+        List<Product> productList = new ArrayList<Product>();
+        HashMap<String,List<Product>> productMap = new HashMap<>();
+    }
 
     public static void addProductGroup() {
         System.out.println("addProductGroup");
     }
 
-    public static void addProduct(/*String productCategoryName*/) {
-        String productId =  UUID.randomUUID().toString();
-        System.out.println(productId);
-     /*    Scanner scan = new Scanner(System.in);
-        Product.productId =  UUID.randomUUID().toString();
-
-        System.out.println("product group:");
-        String input= scan.nextLine();
-        Product.addProduct(productCategoryName);
-*/
-
-
-      //  Product p = new Product();
-     /*    productGroup=productGroup;
-
-        System.out.println("product group:");
-        productGroup=scan.nextLine();
-        System.out.println(productGroup);
-        System.out.println(productGroup=="Notebook");
-
-
-*/
-        /* 
-                
-        System.out.println(Product.productGroup);
-
-        Scanner scan = new Scanner(System.in);
-        productId++;
-
-
+    public static void addProduct(String productId) {
         
-        Product.productGroup = scan.nextLine();
-        System.out.println(Product.productGroup);
+//        List<Product> productList = new ArrayList<Product>();
+  //      HashMap<String,List<Product>> productMap = new HashMap<>();
+      //  System.out.println(productMap.get(productId));
+        //productMap.get(productList));
+    //    System.out.println(productList);
+        System.out.println(productId);
+        /*
+         * Scanner scan = new Scanner(System.in);
+         * Product.productId = UUID.randomUUID().toString();
+         * 
+         * System.out.println("product group:");
+         * String input= scan.nextLine();
+         * Product.addProduct(productCategoryName);
+         */
 
-
-        System.out.println("unitPrice:");
-        int unitPrice = scan.nextInt();
-
-        System.out.println("disocuntRate:");
-        int disocuntRate = scan.nextInt();
-
-        System.out.println("stockAmount:");
-        int stockAmount = scan.nextInt();
-
-        System.out.println("nameOfProduct:");
-        String nameOfProduct = scan.nextLine();
-
-        System.out.println("brandInfo");
-        String brandInfo = scan.nextLine();
-        System.out.println(Product.productGroup == "Notebook");
-        if (productGroup == "Notebook") {
-
-            System.out.println("RAM_GB");
-            int RAM_GB = scan.nextInt();
-
-            System.out.println("storage_SSDs_GB");
-            int storage_SSDs_GB = scan.nextInt();
-
-            System.out.println("screenSize_Inc");
-            int screenSize_Inc = scan.nextInt();
-
-        }
-*/
+        // Product p = new Product();
+        /*
+         * productGroup=productGroup;
+         * 
+         * System.out.println("product group:");
+         * productGroup=scan.nextLine();
+         * System.out.println(productGroup);
+         * System.out.println(productGroup=="Notebook");
+         * 
+         * 
+         */
+        /*
+         * 
+         * System.out.println(Product.productGroup);
+         * 
+         * Scanner scan = new Scanner(System.in);
+         * productId++;
+         * 
+         * 
+         * 
+         * Product.productGroup = scan.nextLine();
+         * System.out.println(Product.productGroup);
+         * 
+         * 
+         * System.out.println("unitPrice:");
+         * int unitPrice = scan.nextInt();
+         * 
+         * System.out.println("disocuntRate:");
+         * int disocuntRate = scan.nextInt();
+         * 
+         * System.out.println("stockAmount:");
+         * int stockAmount = scan.nextInt();
+         * 
+         * System.out.println("nameOfProduct:");
+         * String nameOfProduct = scan.nextLine();
+         * 
+         * System.out.println("brandInfo");
+         * String brandInfo = scan.nextLine();
+         * System.out.println(Product.productGroup == "Notebook");
+         * if (productGroup == "Notebook") {
+         * 
+         * System.out.println("RAM_GB");
+         * int RAM_GB = scan.nextInt();
+         * 
+         * System.out.println("storage_SSDs_GB");
+         * int storage_SSDs_GB = scan.nextInt();
+         * 
+         * System.out.println("screenSize_Inc");
+         * int screenSize_Inc = scan.nextInt();
+         * 
+         * }
+         */
         System.out.println("addProduct");
     }
 
