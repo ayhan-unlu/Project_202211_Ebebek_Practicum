@@ -60,7 +60,7 @@ public class Product extends MenuPanel {
     public static void createProductID() {
         String productId = UUID.randomUUID().toString();
         createProductHashMap(productId);
-      //  System.out.println(productId);
+        System.out.println("productId : "+productId);
       //  addProduct();
     }
 
