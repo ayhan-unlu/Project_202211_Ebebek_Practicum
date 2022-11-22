@@ -49,14 +49,27 @@ public class Product extends MenuPanel {
         this.color = color;
 
     }
-
+public static void createProductID() {
+    String productId =  UUID.randomUUID().toString();
+    System.out.println(productId);
+}
 
     public static void addProductGroup() {
         System.out.println("addProductGroup");
     }
 
-    public static void addProduct() {
-        Scanner scan = new Scanner(System.in);
+    public static void addProduct(/*String productCategoryName*/) {
+        String productId =  UUID.randomUUID().toString();
+        System.out.println(productId);
+     /*    Scanner scan = new Scanner(System.in);
+        Product.productId =  UUID.randomUUID().toString();
+
+        System.out.println("product group:");
+        String input= scan.nextLine();
+        Product.addProduct(productCategoryName);
+*/
+
+
       //  Product p = new Product();
      /*    productGroup=productGroup;
 

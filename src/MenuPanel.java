@@ -104,7 +104,7 @@ public class MenuPanel extends PatikaStoreMain {
                         mainMenu();
                         break;
                     case 1:
-                        Product.addProduct();
+                        Product.createProductID();
                         break;
                     case 2:
                         Product.deleteProductById();

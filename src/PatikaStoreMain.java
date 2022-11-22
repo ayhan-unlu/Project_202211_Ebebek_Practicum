@@ -1,3 +1,5 @@
+import java.util.UUID;
+
 public class PatikaStoreMain {
         public PatikaStoreMain() {
         }
@@ -16,6 +18,7 @@ public class PatikaStoreMain {
                 Brand brand7 = new Brand(brandCounter++, "HP");
                 Brand brand8 = new Brand(brandCounter++, "Xiaomi");
                 Brand brand9 = new Brand(brandCounter++, "Monster");
+
 
                 /*
                  * 1
