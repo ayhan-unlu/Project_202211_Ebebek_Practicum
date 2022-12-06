@@ -4,6 +4,7 @@
 As of 22 November 2022 23:34 pm 
 1. The Project Menu displays are functional. 
 2. Unique Product ID is created.
+3. Brands are listed.
  
 
 ## Project Summary
