@@ -272,11 +272,5 @@ public class MenuPanel extends PatikaStoreMain {
 
     }
 
-    // public static void brandMenu() {
 
-    // System.out.println(
-    // "*******************************\n* WELCOME TO BRAND MENU
-    // *\n*******************************\n");
-
-    // }
 }

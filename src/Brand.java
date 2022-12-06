@@ -12,11 +12,11 @@ public class Brand extends MenuPanel {
     }
 
     public static void addBrand() {
-        System.out.println("addBrand");
+        System.out.println("Add Brand");
+
     }
 
     public static void listBrand() {
-        System.out.println("listBrand");
         Brand.print();
     }
 
