@@ -48,11 +48,7 @@ public class PatikaStoreMain {
                  * productList.add(mobilePhone2);
                  * productList.add(mobilePhone3);
                  * 
-                 * Map<String, List<Product>> productListGroupedbyProductGroup =
-                 * productList.stream()
-                 * .collect(Collectors.groupingBy(w -> w.productGroup));
-                 * Map<String, List<Product>> productListGroupedbyBrand = productList.stream()
-                 * .collect(Collectors.groupingBy(w -> w.brandInfo));
+
                  * 
                  * System.out.println(productListGroupedbyProductGroup.keySet());
                  * System.out.println(productListGroupedbyProductGroup.keySet());
