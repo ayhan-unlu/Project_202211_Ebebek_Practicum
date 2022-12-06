@@ -1,13 +1,12 @@
 
 public class PatikaStoreMain {
-//constructor
+        // constructor
         public PatikaStoreMain() {
         }
 
-
         public static void main(String[] args) {
-            //MenuPanel class object is created
+                // MenuPanel class object is created
                 MenuPanel menuPanel = new MenuPanel();
-                MenuPanel.mainMenu();   
+                MenuPanel.mainMenu();
         }
 }

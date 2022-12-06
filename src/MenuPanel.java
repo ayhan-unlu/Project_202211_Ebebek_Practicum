@@ -111,7 +111,7 @@ public class MenuPanel extends PatikaStoreMain {
 
                         break;
                     case 3:
-                        //Product.ListProductByGroup();
+                        // Product.ListProductByGroup();
 
                         break;
                     case 4:
@@ -271,6 +271,5 @@ public class MenuPanel extends PatikaStoreMain {
                 "*******************************\n* WELCOME TO MOBILE PHONE MENU*\n*******************************\n");
 
     }
-
 
 }

@@ -26,9 +26,8 @@ public class Product extends MenuPanel {
     public String color;// :string = {Black, Red, Blue}
 
     List<Product> productList = new ArrayList<Product>();
-    HashMap<String,List<Product>> productMap = new HashMap<>();
+    HashMap<String, List<Product>> productMap = new HashMap<>();
 
-    // Product.productMenu();
     Product() {
 
     }
@@ -59,12 +58,12 @@ public class Product extends MenuPanel {
     public static void createProductID() {
         String productId = UUID.randomUUID().toString();
         createProductHashMap(productId);
-        System.out.println("productId : "+productId+"\n\n");
+        System.out.println("productId : " + productId + "\n\n");
     }
 
     public static void createProductHashMap(String productId) {
         List<Product> productList = new ArrayList<Product>();
-        HashMap<String,List<Product>> productMap = new HashMap<>();
+        HashMap<String, List<Product>> productMap = new HashMap<>();
     }
 
     public static void addProductGroup() {
@@ -74,14 +73,15 @@ public class Product extends MenuPanel {
     public static void addProduct(String productId) {
 
         System.out.println(productId);
-     
+
         System.out.println("addProduct");
     }
 
     public static void deleteProductById() {
         System.out.println("deleteProductById");
     }
- public String getProductGroup() {
+
+    public String getProductGroup() {
         return productGroup;
     }
 
@@ -93,5 +93,4 @@ public class Product extends MenuPanel {
         System.out.println("ListProductByBrand");
     }
 
- 
 }
