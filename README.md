@@ -1,6 +1,6 @@
 # Getting Started
 
-### Prepared for the Fullfillment of Java101 path in " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
+### Prepared for the Fullfillment of " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
 As of 22 November 2022 23:34 pm 
 1. The Project Menu displays are functional. 
 2. Unique Product ID is created.
