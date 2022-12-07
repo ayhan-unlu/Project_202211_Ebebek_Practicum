@@ -1,9 +1,10 @@
 # Getting Started
 
-### Prepared for the Fullfillment of Java101 path in " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
+### Prepared for the Fullfillment of " ebebek Java & QA & SAP Spartacus Practicum " with Patika.Dev and Kodluyoruz.org in November 2022
 As of 22 November 2022 23:34 pm 
 1. The Project Menu displays are functional. 
 2. Unique Product ID is created.
+3. Brands are listed.
  
 
 ## Project Summary
@@ -29,14 +30,6 @@ The name of the Virtual Store will be "PatikaStore".
 
 ![ListingMenu](https://user-images.githubusercontent.com/103220953/203017083-9b7f78c9-a17b-4223-b35a-bf9ecadcc3df.JPG)
 
-
-## Folder Structure
-
-The workspace contains three folders by default, where:
-
-- `.vscode`: project including UML diagrams is prepared in VS Code
-- `src`: the folder to maintain sources
-- `bin`: the folder to maintain dependencies
 
 
 ## Thanks to <a href="https://app.patika.dev" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/patikaLogoSVG.svg" alt="https://app.patika.dev/" height="100" width="100" /></a> and  <a href="https://kodluyoruz.org/tr/kodluyoruz/" target="blank"><img align="center" src="https://raw.githubusercontent.com/ayhan-unlu/ayhan-unlu/main/KodluyoruzLogoSVG.svg" alt="https://kodluyoruz.org/tr/kodluyoruz/" height="100" width="100" /></a> 
