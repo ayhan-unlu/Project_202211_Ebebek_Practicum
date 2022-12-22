@@ -5,7 +5,11 @@ As of 22 November 2022 23:34 pm
 1. The Project Menu displays are functional. 
 2. Unique Product ID is created.
 3. Brands are listed.
- 
+4. The rest of the project is not completed.
+
+As of 22 December 2022 17:40 pm
+The whole project is being practiced again including the incomplete parts.
+New README(2) file and a new package "packageAfterSubmission" are created. 
 
 ## Project Summary
 
