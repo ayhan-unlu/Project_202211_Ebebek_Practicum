@@ -10,6 +10,12 @@ As of 22 November 2022 23:34 pm
 As of 22 December 2022 17:40 pm
 The whole project is being practiced again including the incomplete parts.
 New README(2) file and a new package "packageAfterSubmission" are created. 
+<br>
+[New README(2) file](https://github.com/ayhan-unlu/Project_202211_Ebebek_Practicum/blob/master/src/packageAfterSubmission/README2.md)
+
+<br>
+
+[New package packageAfterSubmission](https://github.com/ayhan-unlu/Project_202211_Ebebek_Practicum/tree/master/src/packageAfterSubmission)
 
 ## Project Summary
 
