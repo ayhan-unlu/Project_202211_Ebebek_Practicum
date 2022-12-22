@@ -1,3 +1,5 @@
+package packageAfterSubmission;
+
 
 public class Brand extends MenuPanel {
     int brandId;
