@@ -64,8 +64,6 @@ public class Product extends MenuPanel {
     }
 
     public static void createProductHashMap(String productId) {
-        List<Product> productList = new ArrayList<Product>();
-        HashMap<String, List<Product>> productMap = new HashMap<>();
     }
 
     public static void addProductGroup() {

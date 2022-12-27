@@ -1,42 +1,41 @@
 package packageAfterSubmission;
 
-
 import java.util.Scanner;
 
 public class MenuPanel extends PatikaStoreMain {
+
+    private static final String mainMenuPanel = "*******************************\n*   WELCOME TO PATIKA STORE   *\n*******************************\nProduct Management System:\n1 - Product Operations\n2 - Brand Operations\n3 - Listing Operations \n0 - Exit\nPlease Choose (0-3): ";
+
+    private static final String productMenuPanel = "****************\n* PRODUCT MENU *\n****************\n1 - Add Product \n2 - Delete Productby Id\n3 - List Product by Group \n4 - List Product by ID\n5 - List Product by Brand\n0 - Return Product Management System \nPlease Choose (0-6): ";
+
+    private static final String brandMenuPanel = "**************\n* BRAND MENU *\n**************\n1 - Add Brand \n2 - List Brand \n0 - Return Product Management System\nPlease Choose (0-2): ";
+
+    private static final String listMenuPanel = "****************\n* LISTING MENU *\n****************\n1 - List by Product Group\n2 - List by Brands \n3 - List by Product Id\n0 - Return Product Management System\nPlease Choose (0-3): ";
+
+    private static final String invalidInputMessage = "\nSorry but You have entered an invalid number.\nPlease Try Again";
+
+    public static String getMainmenupanel() {
+        return mainMenuPanel;
+    }
+
+    public static String getProductmenupanel(){
+        return productMenuPanel;
+    }
+
+    public static String getBrandmenupanel(){
+        return brandMenuPanel;
+    }
+
+    public static String getListmenupanel(){
+        return listMenuPanel;
+    }
 
     public MenuPanel() {
         super();
         // MenuPanel.mainMenu();
         // Product product = new Product(null, 0, 0, 0, 0, null, null);
-
     }
 
-    public static void printMainMenuPanel() {
-
-        System.out.println(
-                "*******************************\n*   WELCOME TO PATIKA STORE   *\n*******************************\nProduct Management System:\n1 - Product Operations\n2 - Brand Operations\n3 - Listing Operations \n0 - Exit\nPlease Choose (0-3): ");
-
-    }
-
-    public static void printProductMenuPanel() {
-
-        System.out.println(
-                "****************\n* PRODUCT MENU *\n****************\n1 - Add Product \n2 - Delete Productby Id\n3 - List Product by Group \n4 - List Product by ID\n5 - List Product by Brand\n0 - Return Product Management System \nPlease Choose (0-6): ");
-    }
-
-    public static void printBrandMenuPanel() {
-
-        System.out.println(
-                "**************\n* BRAND MENU *\n**************\n1 - Add Brand \n2 - List Brand \n0 - Return Product Management System\nPlease Choose (0-2): ");
-
-    }
-
-    public static void printListMenuPanel() {
-
-        System.out.println(
-                "****************\n* LISTING MENU *\n****************\n1 - List by Product Group\n2 - List by Brands \n3 - List by Product Id\n0 - Return Product Management System\nPlease Choose (0-3): ");
-    }
 
     public static void printNotebookMenuPanel() {
 
@@ -47,7 +46,7 @@ public class MenuPanel extends PatikaStoreMain {
 
     public static void printInvalidInputMessage() {
 
-        System.out.println("\nSorry but You have entered an invalid number.\nPlease Try Again");
+        System.out.println(invalidInputMessage);
 
     }
 
@@ -56,7 +55,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                printMainMenuPanel();
+                getMainmenupanel();
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -92,12 +91,11 @@ public class MenuPanel extends PatikaStoreMain {
 
     public static void productMenu() {
 
-        System.out.println();
         boolean isError = true;
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                printProductMenuPanel();
+                getProductmenupanel();
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -149,7 +147,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                printBrandMenuPanel();
+                getBrandmenupanel();
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -186,7 +184,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                printListMenuPanel();
+                getListmenupanel();
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -230,7 +228,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                printMainMenuPanel();
+                getMainmenupanel();
                 int selection = scan.nextInt();
 
                 switch (selection) {
