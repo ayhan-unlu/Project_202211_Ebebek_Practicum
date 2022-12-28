@@ -14,6 +14,12 @@ public class MenuPanel extends PatikaStoreMain {
 
     private static final String invalidInputMessage = "\nSorry but You have entered an invalid number.\nPlease Try Again";
 
+    public MenuPanel() {
+        super();
+        // MenuPanel.mainMenu();
+        // Product product = new Product(null, 0, 0, 0, 0, null, null);
+    }
+
     public static String getMainmenupanel() {
         return mainMenuPanel;
     }
@@ -30,20 +36,6 @@ public class MenuPanel extends PatikaStoreMain {
         return listMenuPanel;
     }
 
-    public MenuPanel() {
-        super();
-        // MenuPanel.mainMenu();
-        // Product product = new Product(null, 0, 0, 0, 0, null, null);
-    }
-
-
-    public static void printNotebookMenuPanel() {
-
-        System.out.println(
-                "*****************\n* NOTEBOOK MENU *\n*****************\n1 - Add a Notebook Operations\n2 - Mobile Phone Operations\n3 - Brand Listing \n0 - Exit\nPlease Choose (1-2-3-0): ");
-
-    }
-
     public static void printInvalidInputMessage() {
 
         System.out.println(invalidInputMessage);
@@ -55,7 +47,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                getMainmenupanel();
+                System.out.println(getMainmenupanel());
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -95,7 +87,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                getProductmenupanel();
+                System.out.println(getProductmenupanel());
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -147,7 +139,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                getBrandmenupanel();
+                System.out.println(getBrandmenupanel());
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -184,7 +176,7 @@ public class MenuPanel extends PatikaStoreMain {
         Scanner scan = new Scanner(System.in);
         while (isError) {
             try {
-                getListmenupanel();
+                System.out.println(getListmenupanel());
                 int selection = scan.nextInt();
 
                 switch (selection) {
@@ -192,13 +184,7 @@ public class MenuPanel extends PatikaStoreMain {
                     case 0:
                         mainMenu();
                         break;
-                    case 1:
-                        notebookMenu();
-                        break;
-                    case 2:
-                        mobilePhoneMenu();
-
-                        break;
+ 
                     case 3:
                         brandMenu();
                         Brand.print();
@@ -220,56 +206,4 @@ public class MenuPanel extends PatikaStoreMain {
         scan.close();
 
     }
-
-    public static void notebookMenu() {
-
-        System.out.println();
-        boolean isError = true;
-        Scanner scan = new Scanner(System.in);
-        while (isError) {
-            try {
-                getMainmenupanel();
-                int selection = scan.nextInt();
-
-                switch (selection) {
-
-                    case 0:
-                        System.out.println("Hope to See You Soon");
-                        break;
-                    case 1:
-                        notebookMenu();
-                        break;
-                    case 2:
-                        mobilePhoneMenu();
-
-                        break;
-                    case 3:
-                        brandMenu();
-                        Brand.print();
-                        break;
-
-                    default:
-                        printInvalidInputMessage();
-                        mainMenu();
-                        break;
-                }
-                isError = false;
-
-            } catch (Exception e) {
-                printInvalidInputMessage();
-                mainMenu();
-            }
-
-        }
-        scan.close();
-
-    }
-
-    public static void mobilePhoneMenu() {
-
-        System.out.println(
-                "*******************************\n* WELCOME TO MOBILE PHONE MENU*\n*******************************\n");
-
-    }
-
 }
