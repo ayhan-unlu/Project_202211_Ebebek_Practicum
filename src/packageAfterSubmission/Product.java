@@ -17,33 +17,27 @@ public class Product {
     private static String stockAmount;
     private static String nameOfProduct;
     private static String brandInfo;
-    private static String screenSize_Inc = "6.1";// (Inc):double = {6.1}
+    private static String screenSizeInc = "6.1";
 
     
-    Product(String productGroup, String unitPrice, String disocuntRate, String stockAmount, String nameOfProduct,
-    String brandInfo, String screenSize_Inc, String RAM_GB, String storage_SSDs_GB, String RAM_MB,
-    String phoneMemoryInformation, String batteryPower, String color) {
-        super();
+
+    
+    Product(String productId, String productGroup, String unitPrice, String discountRate, String stockAmount, String nameOfProduct,
+    String brandInfo, String screenSizeInc) {
         this.productId = productId;
         this.productGroup = productGroup;
         this.unitPrice = unitPrice;
-        this.discountRate = disocuntRate;
+        this.discountRate = discountRate;
         this.stockAmount = stockAmount;
         this.nameOfProduct = nameOfProduct;
         this.brandInfo = brandInfo;
-        this.screenSize_Inc = screenSize_Inc;
+        this.screenSizeInc = screenSizeInc;
         
-        this.RAM_GB = RAM_GB;
-        this.storage_SSDs_GB = storage_SSDs_GB;
-        
-        this.RAM_MB = RAM_MB;
-        this.phoneMemoryInformation = phoneMemoryInformation;
-        this.batteryPower = batteryPower;
-        this.color = color;
-    }
+    /*    
+     */}
 
     public String getProductId() {
-        return productId;
+        return this.productId;
     }
     
     public void setProductId(String productId) {
@@ -51,7 +45,7 @@ public class Product {
     }
     
     public String getProductGroup() {
-        return productGroup;
+        return this.productGroup;
     }
 
     public void setProductGroup(String productGroup) {
@@ -59,7 +53,7 @@ public class Product {
     }
     
     public String getUnitPrice() {
-        return unitPrice;
+        return this.unitPrice;
     }
 
     public void setUnitPrice(String unitPrice) {
@@ -67,7 +61,7 @@ public class Product {
     }
 
     public String getDiscountRate() {
-        return discountRate;
+        return this.discountRate;
     }
 
     public void setDiscountRate(String discountRate) {
@@ -75,7 +69,7 @@ public class Product {
     }
     
     public String getStockAmount() {
-        return stockAmount;
+        return this.stockAmount;
     }
 
     public void setStockAmount(String stockAmount) {
@@ -83,7 +77,7 @@ public class Product {
     }
     
     public String getNameOfProduct() {
-        return nameOfProduct;
+        return this.nameOfProduct;
     }
     
     public void setNameOfProduct(String nameOfProduct) {
@@ -91,19 +85,19 @@ public class Product {
     }
     
     public String getBrandInfo() {
-        return brandInfo;
+        return this.brandInfo;
     }
 
     public void setBrandInfo(String brandInfo) {
         this.brandInfo = brandInfo;
     }
 
-    public String getScreenSize_Inc() {
-        return screenSize_Inc;
+    public String getScreenSizeInc() {
+        return this.screenSizeInc;
     }
 
-    public void setScreenSize_Inc(String screenSize_Inc) {
-        this.screenSize_Inc = screenSize_Inc;
+    public void setScreenSizeInc(String screenSizeInc) {
+        this.screenSizeInc = screenSizeInc;
     }
     
     public void createProductId() {
@@ -112,13 +106,13 @@ public class Product {
 
     
     
-    public static String RAM_GB = "8";// (GB):int = 8
+    public static String RAM_GB ;// (GB):int = 8
     public static String storage_SSDs_GB = "512";// (SSDs):int= 512
     
-    public static String RAM_MB = "6";// (MB):int = 6
-    public static String phoneMemoryInformation;// (GB) :int= {128,64 }
-    public static String batteryPower = "4000";// :int=4000
-    public static String color;// :string = {Black, Red, Blue}
+    public static String RAM_MB ;// (MB):int = 6
+    public static String phoneMemoryInformation;
+    public static String batteryPower ;// :int=4000
+    public static String color;
 
     List<Product> productList = new ArrayList<Product>();
     HashMap<String, List<Product>> productMap = new HashMap<>();
@@ -126,13 +120,15 @@ public class Product {
     public static void createProductID() {
         String productId = UUID.randomUUID().toString();
         createProductInfoArray(productId);
+        System.out.println("Product Id Created!");
+
         System.out.println("productId : " + productId + "\n\n");
     }
     
     public static void createProductInfoArray(String productGroup) {
 
         if (productGroup=="Notebook"||productGroup==" Notebook"||productGroup=="Notebook "||productGroup==" Notebook "||productGroup=="Note book"||productGroup==" Note book"||productGroup=="Note book "||productGroup==" Note book "||productGroup=="notebook"||productGroup==" notebook"||productGroup=="notebook "||productGroup==" notebook "||productGroup=="note book"||productGroup==" note book"||productGroup=="note book "||productGroup==" note book "){
-            String [] productInfoArray = {productId,productGroup,unitPrice,discountRate,stockAmount,nameOfProduct,brandInfo,screenSize_Inc,RAM_GB,storage_SSDs_GB};
+            String [] productInfoArray = {productId,productGroup,unitPrice,discountRate,stockAmount,nameOfProduct,brandInfo,screenSizeInc,RAM_GB,storage_SSDs_GB};
 
         }
     productId = UUID.randomUUID().toString();
@@ -157,10 +153,11 @@ public class Product {
 
     public static void ListProductById() {
         System.out.println("ListProductById");
+
     }
 
     public static void ListProductByBrand() {
-        System.out.println("ListProductByBrand");
+        System.out.println("ListProductByBrand5");
     }
 
 }

@@ -2,7 +2,7 @@ package packageAfterSubmission;
 
 import java.util.Scanner;
 
-public class MenuPanel extends PatikaStoreMain {
+public class MenuPanel {
 
     private static final String mainMenuPanel = "*******************************\n*   WELCOME TO PATIKA STORE   *\n*******************************\nProduct Management System:\n1 - Product Operations\n2 - Brand Operations\n3 - Listing Operations \n0 - Exit\nPlease Choose (0-3): ";
 
@@ -36,7 +36,7 @@ public class MenuPanel extends PatikaStoreMain {
         return listMenuPanel;
     }
 
-    public static void printInvalidInputMessage() {
+    public static void getInvalidInputMessage() {
 
         System.out.println(invalidInputMessage);
 
@@ -66,14 +66,14 @@ public class MenuPanel extends PatikaStoreMain {
                         break;
 
                     default:
-                        printInvalidInputMessage();
+                        getInvalidInputMessage();
                         mainMenu();
                         break;
                 }
                 isError = false;
 
             } catch (Exception e) {
-                printInvalidInputMessage();
+                getInvalidInputMessage();
                 mainMenu();
             }
 
@@ -116,14 +116,14 @@ public class MenuPanel extends PatikaStoreMain {
                         break;
 
                     default:
-                        printInvalidInputMessage();
+                        getInvalidInputMessage();
                         productMenu();
                         break;
                 }
                 isError = false;
 
             } catch (Exception e) {
-                printInvalidInputMessage();
+                getInvalidInputMessage();
                 productMenu();
             }
 
@@ -154,14 +154,14 @@ public class MenuPanel extends PatikaStoreMain {
                         Brand.listBrand();
                         break;
                     default:
-                        printInvalidInputMessage();
+                        getInvalidInputMessage();
                         mainMenu();
                         break;
                 }
                 isError = false;
 
             } catch (Exception e) {
-                printInvalidInputMessage();
+                getInvalidInputMessage();
                 mainMenu();
             }
 
@@ -191,14 +191,14 @@ public class MenuPanel extends PatikaStoreMain {
                         break;
 
                     default:
-                        printInvalidInputMessage();
+                        getInvalidInputMessage();
                         mainMenu();
                         break;
                 }
                 isError = false;
 
             } catch (Exception e) {
-                printInvalidInputMessage();
+                getInvalidInputMessage();
                 mainMenu();
             }
 
