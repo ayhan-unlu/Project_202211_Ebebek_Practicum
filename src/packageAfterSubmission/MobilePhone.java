@@ -24,27 +24,27 @@ public class MobilePhone extends Product {
         this.RAM_MB = RAM_MB;
     }
 
-    public String getPhoneMemoryInformation(){
+    public String getPhoneMemoryInformation() {
         return this.phoneMemoryInformation;
     }
 
-    public void setPhoneMemoryInformation (String phoneMemoryInformation){
-        this.phoneMemoryInformation=phoneMemoryInformation;
+    public void setPhoneMemoryInformation(String phoneMemoryInformation) {
+        this.phoneMemoryInformation = phoneMemoryInformation;
     }
 
-    public String getBatteryPower(){
+    public String getBatteryPower() {
         return this.batteryPower;
     }
 
-    public void setBatteryPower(String batterPower){
-        this.batteryPower=batterPower;
+    public void setBatteryPower(String batterPower) {
+        this.batteryPower = batterPower;
     }
 
-    public String getColor(){
-        return this.color;        
+    public String getColor() {
+        return this.color;
     }
 
-    public void setColor(String color){
-        this.color=color;
+    public void setColor(String color) {
+        this.color = color;
     }
 }

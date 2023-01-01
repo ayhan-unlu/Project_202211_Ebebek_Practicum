@@ -24,15 +24,15 @@ public class MenuPanel {
         return mainMenuPanel;
     }
 
-    public static String getProductmenupanel(){
+    public static String getProductmenupanel() {
         return productMenuPanel;
     }
 
-    public static String getBrandmenupanel(){
+    public static String getBrandmenupanel() {
         return brandMenuPanel;
     }
 
-    public static String getListmenupanel(){
+    public static String getListmenupanel() {
         return listMenuPanel;
     }
 
@@ -53,7 +53,7 @@ public class MenuPanel {
                 switch (selection) {
 
                     case 0:
-                        System.out.println("\nHope to See You Soon\n");
+                        System.out.println("\nHope to See You Soon\nBye for Now.\n");
                         break;
                     case 1:
                         productMenu();
@@ -96,7 +96,7 @@ public class MenuPanel {
                         mainMenu();
                         break;
                     case 1:
-                        Product.createProductID();
+                        Product.createProduct();
                         break;
                     case 2:
                         Product.deleteProductById();
@@ -184,7 +184,7 @@ public class MenuPanel {
                     case 0:
                         mainMenu();
                         break;
- 
+
                     case 3:
                         brandMenu();
                         Brand.print();

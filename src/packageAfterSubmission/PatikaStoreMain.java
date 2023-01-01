@@ -1,6 +1,5 @@
 package packageAfterSubmission;
 
-
 public class PatikaStoreMain {
         // constructor
         public PatikaStoreMain() {
