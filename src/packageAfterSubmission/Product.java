@@ -3,6 +3,7 @@ package packageAfterSubmission;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Scanner;
 import java.util.UUID;
 
 /**
@@ -22,80 +23,80 @@ public class Product {
     Product(String productId, String productGroup, String unitPrice, String discountRate, String stockAmount,
             String nameOfProduct,
             String brandInfo, String screenSizeInc) {
-        this.productId = productId;
-        this.productGroup = productGroup;
-        this.unitPrice = unitPrice;
-        this.discountRate = discountRate;
-        this.stockAmount = stockAmount;
-        this.nameOfProduct = nameOfProduct;
-        this.brandInfo = brandInfo;
-        this.screenSizeInc = screenSizeInc;
+        Product.productId = productId;
+        Product.productGroup = productGroup;
+        Product.unitPrice = unitPrice;
+        Product.discountRate = discountRate;
+        Product.stockAmount = stockAmount;
+        Product.nameOfProduct = nameOfProduct;
+        Product.brandInfo = brandInfo;
+        Product.screenSizeInc = screenSizeInc;
 
         /*    
          */}
 
     public String getProductId() {
-        return this.productId;
+        return Product.productId;
     }
 
     public void setProductId(String productId) {
-        this.productId = productId;
+        Product.productId = productId;
     }
 
     public String getProductGroup() {
-        return this.productGroup;
+        return Product.productGroup;
     }
 
     public void setProductGroup(String productGroup) {
-        this.productGroup = productGroup;
+        Product.productGroup = productGroup;
     }
 
     public String getUnitPrice() {
-        return this.unitPrice;
+        return Product.unitPrice;
     }
 
     public void setUnitPrice(String unitPrice) {
-        this.unitPrice = unitPrice;
+        Product.unitPrice = unitPrice;
     }
 
     public String getDiscountRate() {
-        return this.discountRate;
+        return Product.discountRate;
     }
 
     public void setDiscountRate(String discountRate) {
-        this.discountRate = discountRate;
+        Product.discountRate = discountRate;
     }
 
     public String getStockAmount() {
-        return this.stockAmount;
+        return Product.stockAmount;
     }
 
     public void setStockAmount(String stockAmount) {
-        this.stockAmount = stockAmount;
+        Product.stockAmount = stockAmount;
     }
 
     public String getNameOfProduct() {
-        return this.nameOfProduct;
+        return Product.nameOfProduct;
     }
 
     public void setNameOfProduct(String nameOfProduct) {
-        this.nameOfProduct = nameOfProduct;
+        Product.nameOfProduct = nameOfProduct;
     }
 
     public String getBrandInfo() {
-        return this.brandInfo;
+        return Product.brandInfo;
     }
 
     public void setBrandInfo(String brandInfo) {
-        this.brandInfo = brandInfo;
+        Product.brandInfo = brandInfo;
     }
 
     public String getScreenSizeInc() {
-        return this.screenSizeInc;
+        return Product.screenSizeInc;
     }
 
     public void setScreenSizeInc(String screenSizeInc) {
-        this.screenSizeInc = screenSizeInc;
+        Product.screenSizeInc = screenSizeInc;
     }
 
     public static String RAM_GB;// (GB):int = 8
@@ -110,15 +111,33 @@ public class Product {
     HashMap<String, List<Product>> productMap = new HashMap<>();
 
     public static void createProduct() {
-        createProductId();
+        String productId = Product.createProductId();
+        String productGroup= decideProductGroup();
+        System.out.println("productId"+productId+"productGroup"+productGroup);
     }
 
-    public static void createProductId() {
+    public static String decideProductGroup() {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Please enter the Product Group: 1- Mobile Phone 2- Notebook");
+        String selection = scan.nextLine();
+        scan.close();
+        if (selection == "1") {
+            return "Mobile Phone";
+        } else if (selection == "2") {
+            return "Notebook";
+        } else {
+            return MenuPanel.getInvalidInputMessage();            
+        }
+    }
+
+    public static String createProductId() {
         String productId = UUID.randomUUID().toString();
-        createProductInfoArray(productId);
         System.out.println("Product Id Created!");
 
         System.out.println("productId : " + productId + "\n\n");
+
+        return productId;
     }
 
     public static void createProductInfoArray(String productGroup) {

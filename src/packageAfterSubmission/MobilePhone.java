@@ -10,41 +10,41 @@ public class MobilePhone extends Product {
             String nameOfProduct, String brandInfo, String screenSizeInc, String RAM_MB, String phoneMemoryInformation,
             String batteryPower, String color) {
         super(productId, productGroup, unitPrice, discountRate, stockAmount, nameOfProduct, brandInfo, screenSizeInc);
-        this.RAM_MB = RAM_MB;
-        this.phoneMemoryInformation = phoneMemoryInformation;
-        this.batteryPower = batteryPower;
-        this.color = color;
+        MobilePhone.RAM_MB = RAM_MB;
+        MobilePhone.phoneMemoryInformation = phoneMemoryInformation;
+        MobilePhone.batteryPower = batteryPower;
+        MobilePhone.color = color;
     }
 
     public String getRAM_MB() {
-        return this.RAM_MB;
+        return MobilePhone.RAM_MB;
     }
 
     public void setRAM_MB(String RAM_MB) {
-        this.RAM_MB = RAM_MB;
+        MobilePhone.RAM_MB = RAM_MB;
     }
 
     public String getPhoneMemoryInformation() {
-        return this.phoneMemoryInformation;
+        return MobilePhone.phoneMemoryInformation;
     }
 
     public void setPhoneMemoryInformation(String phoneMemoryInformation) {
-        this.phoneMemoryInformation = phoneMemoryInformation;
+        MobilePhone.phoneMemoryInformation = phoneMemoryInformation;
     }
 
     public String getBatteryPower() {
-        return this.batteryPower;
+        return MobilePhone.batteryPower;
     }
 
     public void setBatteryPower(String batterPower) {
-        this.batteryPower = batterPower;
+        MobilePhone.batteryPower = batterPower;
     }
 
     public String getColor() {
-        return this.color;
+        return MobilePhone.color;
     }
 
     public void setColor(String color) {
-        this.color = color;
+        MobilePhone.color = color;
     }
 }

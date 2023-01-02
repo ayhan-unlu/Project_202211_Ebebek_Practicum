@@ -9,5 +9,7 @@ public class PatikaStoreMain {
                 // MenuPanel object is created
                 MenuPanel menuPanel = new MenuPanel();
                 MenuPanel.mainMenu();
+
+
         }
 }
