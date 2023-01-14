@@ -9,7 +9,7 @@ import java.util.UUID;
 /**
  * Product
  */
-public class Product {
+public abstract class Product {
 
     private static String productId;
     private static String productGroup;

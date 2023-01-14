@@ -2,7 +2,7 @@ package packageAfterSubmission;
 
 import java.util.Scanner;
 
-public class MenuPanel {
+public abstract class MenuPanel {
 
     private static final String mainMenuPanel = "*******************************\n*   WELCOME TO PATIKA STORE   *\n*******************************\nProduct Management System:\n1 - Product Operations\n2 - Brand Operations\n3 - Listing Operations \n0 - Exit\nPlease Choose (0-3): ";
 
